@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+body{
+    background-color: var(--bs-dark);
+    color: white;
+}
+.container_cabecalho{
+    display: flex;
+    position: fixed;
+    background-color: rgb(37, 37, 37);
+    padding: 20px;
+    flex-direction: row-reverse;
+    width: 99%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.btn-cabecalho{
+    background-color: #050DD9;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+header{
+    display: flex;
+    gap: 10px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.sobre-mim{
+    display: flex;
+    margin-top: 181px;
+   margin-left: 50px;
+}
+.foto{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.paragrafo{
+    width: 70%;
+    margin-top: 80px;
+margin-left: 30px;
+    font-size: 30px;
+   font-weight: bold;
+}
+
+.section-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.cards{
+    margin-top: 200px;
+      height: 900px;
+     width: 90%;
+     display: flex;
+     flex-direction: row;
+     
+}
+.imagen-fundo-card{
+ opacity: 2%;
+  width: 100%;
+  height: 100%;
+}
+.linguagens{
+    margin-top: 200px;
+    margin-left: -90%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.js, .python{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.title-thiago{
+    margin-top: 70px;
+display: flex;
+justify-content: center;
+font-size: 60px;
+}
+span{
+    color: #050DD9  ;
+}
+.descricao-sobre-mim{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.footer{
+    margin-top: 300px;
+    width: 100%;
+    height: 500px;
+    background-color:rgb(138, 135, 132);
+}
+
+.formulario-de-contato{
+    margin-top: 100px;
+
+}
+.form-control{
+    padding: 300px;
+}
+
+
+@media screen and (max-width:500px) {
+
+  
+.sobre-mim{
+    display: flex;
+    flex-direction: column;
+    margin-top: 181px;
+}
+
+.paragrafo{
+    font-size: 15px;
+}
+
+.js{
+    width: 50px;
+    height: 50px;
+}
+.cards{
+    height: 400px;
+}
+
+.linguagens{
+    gap: 20px;
+}
+.footer{
+    margin-top: 60px;
+}
+.title-thiago{
+    margin-top: 20px;
+}
+}

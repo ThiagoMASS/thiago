@@ -1,0 +1,18 @@
+function smoothScroll(e) { ... }: Isso define uma função JavaScript chamada smoothScrollque recebe um evento ecomo parâmetro. Este evento representa o evento click que acionou a função.
+
+e.preventDefault();: esta linha evita o comportamento padrão do link clicado. Nesse caso, impede que o navegador navegue para uma nova página ao clicar no link.
+
+const targetId = e.currentTarget.getAttribute("href");: Esta linha recupera o valor do hrefatributo do link clicado ( e.currentTarget). Esse atributo deve conter o ID da seção de destino para a qual você deseja rolar.
+
+const targetSection = document.querySelector(targetId);: Esta linha usa o document.querySelectormétodo para localizar o elemento DOM (seção) com o ID especificado ( targetId). Ele procura em todo o documento um elemento com o ID fornecido.
+
+if (targetSection) { ... }: Esta instrução condicional verifica se o targetSectionelemento foi encontrado. Se existir, o seguinte bloco de código será executado.
+
+const offsetTop = targetSection.offsetTop;: esta linha calcula a distância vertical (deslocamento) do topo da página até o topo do arquivo targetSection. A offsetToppropriedade fornece essa distância em pixels.
+
+window.scrollTo({ ... });: Esta linha inicia a animação de rolagem usando o scrollTométodo do windowobjeto. Leva um objeto de opções como um argumento.
+
+top: offsetTop: A toppropriedade do objeto opções especifica a posição vertical (deslocamento) para a qual a página deve rolar. Ele usa o offsetTopvalor calculado.
+
+behavior: "smooth": esta propriedade dentro do objeto de opções especifica o comportamento de rolagem. Está definido para "smooth"criar uma animação de rolagem suave.
+
